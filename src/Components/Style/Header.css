@@ -1,0 +1,21 @@
+.heading{
+    background: rgb(201,125,235);
+    background: radial-gradient(circle, rgba(201,125,235,1) 11%, rgba(137,59,173,0.9923319669664741) 100%);
+
+    margin: 1% auto;
+    padding: 1px 0;
+    font-family: 'Courier New',Arial, Helvetica, sans-serif;
+    border-radius: 9999px;
+    font-size: 1.7em;
+    line-height: 1;
+}
+
+.icon{
+    margin: 1% 1.5% 1% 0;
+    font-size: 1.7em;
+    vertical-align: middle;
+}
+.heading h1{
+    vertical-align: middle;
+    display: inline-block;
+}

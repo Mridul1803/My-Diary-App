@@ -1,0 +1,54 @@
+.form-div{
+    background-image: url(https://cdn.dribbble.com/users/1904895/screenshots/5497831/672912510.jpg);
+    border-radius: 10px;
+    position: relative;
+}
+
+#notes-form textarea{
+
+    border: 0;
+    background: white;
+    border-radius: 10px;
+    padding: 3px 5px;
+    font-size : 18px;
+    min-height: 80px;
+    width: 80%;
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+#notes-form button{
+    min-height: 80px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+    
+    width: 8%;
+    padding: 1% 1%;
+    border: 0;
+    border-radius: 10px;
+    /* margin-left: 3%; */
+    font-size: large;
+}
+
+#notes-form button:hover{
+    background-color: rgba(102, 15, 128, 0.836);
+    cursor: pointer;
+}
+
+/* #notes-form button:active{
+    transform: translateY(2px);
+} */
+
+#notes-form button:focus{
+    outline: none;
+}
+
+#notes-form textarea::placeholder{
+    color : rgb(65, 60, 60);
+}
+
+#notes-form textarea    :focus{
+    outline : none;
+}
