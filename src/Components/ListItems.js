@@ -6,9 +6,11 @@ function ListItems(props)
     const items = props.items;
     const listItems = items.map(item =>
         {
-            return <div className='list ma3 mh7 pa3 pb0' key={item.key}>
+            return <div className='list dib ma3 pa3 pb0 br4' key={item.key}>
                     
-                    <textarea rows='4' onChange={ (e) => props.setUpdate(e.target.value, item.key) } type='text' id={item.key} value={item.text} />
+                    <p className='f6 b tc underline mb1' >{item.date}-{item.month}-{item.year}</p>
+
+                    <textarea rows='7' onChange={ (e) => props.setUpdate(e.target.value, item.key) } type='text' id={item.key} value={item.text} />
                     
                     <div className='trash-icon tc grow' onClick={ () => props.deleteItem(item.key) } >
 

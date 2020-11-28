@@ -1,14 +1,17 @@
 .list{
-    min-height: 50px;
+    min-width: 20%;
+    min-height: 40%;
     background-color: rgb(245, 234, 90);
-    border-radius: 9999px;
+    /* border-radius: 9999px; */
     border: 7px solid rgb(143, 48, 143);
 }
 
 .list1{
-    display: inline;
-    max-width: 50%;
-    max-height: 10px;
+    /* display: inline; */
+    max-width: 100%;
+    /* max-height: 100%; */
+    margin-top: 1%;
+    margin-left: 5%;
 }
 
 .trash-icon{

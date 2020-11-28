@@ -3,7 +3,7 @@ import './App.css';
 import Header from './Components/Header'
 import MainBody from './Components/MainBody'
 import ListItems from './Components/ListItems'
-import FilterComp from './Components/FilterComp'
+// import FilterComp from './Components/FilterComp'
 
 class App extends Component
 {
@@ -13,17 +13,19 @@ class App extends Component
       items:[],
       currentItem:{
         text:'',
+        date:'',
         month:'',
+        year:'',
         key:''
-      },
-      displayState:''
+      }
+      // displayState:''
     }
     this.handleInput = this.handleInput.bind(this);
     this.addItem = this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
     this.setUpdate = this.setUpdate.bind(this);
-    this.handleDisplaychange = this.handleDisplaychange.bind(this);
-    this.filterItems = this.filterItems.bind(this);
+    // this.handleDisplaychange = this.handleDisplaychange.bind(this);
+    // this.filterItems = this.filterItems.bind(this);
 
   }
 
@@ -31,7 +33,9 @@ class App extends Component
     this.setState({
       currentItem:{
         text : e.target.value,
+        date : new Date().getDate(),
         month : new Date().getMonth(),
+        year : new Date().getFullYear(),
         key:Date.now()
       }
     })
@@ -48,10 +52,12 @@ class App extends Component
         items : newItems,
         currentItem:{
           text:'',
+          date : '',
           month: '',
+          year:'',
           key:''
         },
-        displayState:''
+        // displayState:''
       })
     }
   }
@@ -75,30 +81,30 @@ class App extends Component
     })
   }
 
-  handleDisplaychange(e){
-    e.preventDefault();
-    this.setState({
-      displayState:e.target.value
-    })
-  }
+  // handleDisplaychange(e){
+  //   e.preventDefault();
+  //   this.setState({
+  //     displayState:e.target.value
+  //   })
+  // }
 
-  filterItems(){
-    if( this.displayState ==='month'){
-      const currentMonth = new Date().getMonth();
-      const filteredItem = this.state.items.filter(item =>
-        item.month !==currentMonth);
-        this.setState({
-          items : filteredItem
-        })
-    }
-  }
+  // filterItems(){
+  //   if( this.displayState ==='month'){
+  //     const currentMonth = new Date().getMonth();
+  //     const filteredItem = this.state.items.filter(item =>
+  //       item.month !==currentMonth);
+  //       this.setState({
+  //         items : filteredItem
+  //       })
+  //   }
+  // }
 
   render()
   {
       return(
         <div>          
           <Header />
-          <FilterComp  handleDisplaychange={this.handleDisplaychange} displayState={this.state.displayState} filterItems={this.filterItems} />
+          {/* <FilterComp  handleDisplaychange={this.handleDisplaychange} displayState={this.state.displayState} filterItems={this.filterItems} /> */}
           <MainBody text={this.state.currentItem.text} addItem={this.addItem} handleInput={this.handleInput} />
           <ListItems items={this.state.items} deleteItem = {this.deleteItem} setUpdate = {this.setUpdate} />
         </div>
