@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/My-Diary-App/static/css/main.6f85fbfb.chunk.css",
+    "main.js": "/My-Diary-App/static/js/main.3b17df2b.chunk.js",
+    "main.js.map": "/My-Diary-App/static/js/main.3b17df2b.chunk.js.map",
+    "runtime-main.js": "/My-Diary-App/static/js/runtime-main.0c057189.js",
+    "runtime-main.js.map": "/My-Diary-App/static/js/runtime-main.0c057189.js.map",
+    "static/css/2.31461e4f.chunk.css": "/My-Diary-App/static/css/2.31461e4f.chunk.css",
+    "static/js/2.3e1cc860.chunk.js": "/My-Diary-App/static/js/2.3e1cc860.chunk.js",
+    "static/js/2.3e1cc860.chunk.js.map": "/My-Diary-App/static/js/2.3e1cc860.chunk.js.map",
+    "static/js/3.950944e9.chunk.js": "/My-Diary-App/static/js/3.950944e9.chunk.js",
+    "static/js/3.950944e9.chunk.js.map": "/My-Diary-App/static/js/3.950944e9.chunk.js.map",
+    "index.html": "/My-Diary-App/index.html",
+    "static/css/2.31461e4f.chunk.css.map": "/My-Diary-App/static/css/2.31461e4f.chunk.css.map",
+    "static/css/main.6f85fbfb.chunk.css.map": "/My-Diary-App/static/css/main.6f85fbfb.chunk.css.map",
+    "static/js/2.3e1cc860.chunk.js.LICENSE.txt": "/My-Diary-App/static/js/2.3e1cc860.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c057189.js",
+    "static/css/2.31461e4f.chunk.css",
+    "static/js/2.3e1cc860.chunk.js",
+    "static/css/main.6f85fbfb.chunk.css",
+    "static/js/main.3b17df2b.chunk.js"
+  ]
+}
